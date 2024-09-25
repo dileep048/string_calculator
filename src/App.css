@@ -71,7 +71,6 @@
   font-weight: bold;
 }
 
-* Input styling */
 .input-box {
   width: 100%;
   padding: 12px;
@@ -104,11 +103,10 @@
   background-color: #a777e3;
   transform: scale(1.05);
 }
-/* Result styling */
+
 .result {
   margin-top: 1.5rem;
   font-size: 1.5rem;
   color: #333;
   animation: fadeIn 0.5s ease-in-out;
 }
-
