@@ -1,8 +1,7 @@
-export function add(numbers: string) {
+export function add(numbers) {
     if (numbers === "") return 0;
 
-    let delimiter: RegExp | string = /[\n,]/;
-
+    let delimiter = /[\n,]/;
     if (numbers.startsWith("//")) {
         delimiter = numbers[2];
         numbers = numbers.slice(4);
