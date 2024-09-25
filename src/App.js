@@ -17,14 +17,20 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>String Calculator</h1>
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-      />
-      <button onClick={handleAdd}>Add</button>
-      {result !== null && <h2>Result: {result}</h2>}
+      <div className="App">
+        <div className="calculator">
+          <h1 className="title">String Calculator</h1>
+          <input
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            className="input-box"
+            placeholder="Enter numbers"
+          />
+          <button onClick={handleAdd} className="calculate-btn">Calculate</button>
+          {result !== null && <h2 className="result">Result: {result}</h2>}
+        </div>
+      </div>
     </div>
   );
 }
